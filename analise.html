@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Visualizando Dados Acadêmicos IFCE</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	
+	<link rel="shortcut icon" type="image/x-icon" href="img/ifce_barra.png" />
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/jquery-ui.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="script/script.js"></script>
+
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	
+</head>
+
+<body>
+	<main>
+		<div class="sidebar">
+		<div class="img-logo">
+			<img src="img/ifce_logo.png">
+		</div>
+		<div class="hamb" id="hamb-menu">
+			<i class="fa fa-bars"></i>
+		</div>
+		<ul id="main-menu" class="animate">
+			<li>
+				<a href="index.html">
+					<i class='fa fa-heartbeat'></i>
+					Início
+					
+				</a>
+			</li>
+			<li>
+				<a href="projeto.html">
+					<i class="fa fa-sitemap"></i>
+					Projeto
+					
+				</a>
+			</li>
+			<li>
+				<a href="analise.html">
+					<i class='fa fa-area-chart'></i>
+					Análises
+					
+				</a>
+			</li>
+			<li>
+				<a href="ferramentas.html">
+				<i class="fa fa-code"></i>
+					Ferramentas
+					
+				</a>
+			</li>
+			<li>
+				<a href="equipe.html">
+					<i class='fa fa-address-card'></i>
+					Equipe
+					
+				</a>
+			</li>
+		</ul>
+	</div>
+
+		<div class="content">
+			<div class="box">
+				
+				<p class="custom-big-title">Visualização Inicial sobre os Dados Acadêmicos do IFCE</p>
+
+					<div class="alert-info-text">
+					<p>
+					
+					Visualizando a quantidade de alunos por curso, etnia e gênero. Observa-se  que mais da metade dos alunos se declaram pardos, e que uma minoria se declaram indígenas.
+					<p>
+					
+					</div>
+				
+				<div class="alert alert-white my-3">
+
+					<iframe width="100%" height="796" frameborder="0"
+  					src="https://observablehq.com/embed/@18153f5de96e4d04/analise-e-visualizacoes-sobre-os-dados-academicos-do-ifce?cells=viewof+frm_alunos%2Cviewof+sel_campus%2CdashInfGerais"></iframe>
+					
+				</div>
+				
+				<p class="custom-big-title">Análise da Quantidade de Alunos por Período Letivo e Nível de Ensino</p>
+
+					<div class="alert-info-text">
+					<p>
+					Analisando a evasão por período letivo, constata-se que a graduação apresenta maior evasão, com exceção de alguns períodos em queda, que podem, possivelmente, ser justificadas por semestres sem edital de seleção/turmas.
+					<p>
+					
+					</div>
+					<div class="alert alert-white my-3">
+
+					<iframe width="100%" height="490" frameborder="0"
+  					src="https://observablehq.com/embed/@18153f5de96e4d04/analise-e-visualizacoes-sobre-os-dados-academicos-do-ifce?cells=viewof+frm_filtro1%2Cline_PeriodoNivelEnsino"></iframe>
+					
+				</div>
+				
+
+				<p class="custom-big-title">Taxa de Evasão nos Campi</p>
+
+					<div class="alert-info-text">
+					<p>
+					Gráfico que permite a consulta e apresentação da visualização á respeito da evasão por campi. É possível considerar consulta por período letivo, nível de ensino, entre outros. 
+					<p>
+					
+					</div>
+					<div class="alert alert-white my-3">
+
+					<iframe width="100%" height="737" frameborder="0"
+  					src="https://observablehq.com/embed/@18153f5de96e4d04/analise-e-visualizacoes-sobre-os-dados-academicos-do-ifce?cells=viewof+frm_filtro3%2Cmapa_evasao"></iframe>
+					
+				</div>
+
+				<p class="custom-big-title">Taxa de Evasão nos Campi por Período Letivo</p>
+
+					<div class="alert-info-text">
+					<p>
+					O gráfico heatmap apresenta a quantidade de alunos evadidos por período letivo e em cada campus. 
+					<p>
+					
+					</div>
+					<div class="alert alert-white my-3">
+
+					<<iframe width="100%" height="684" frameborder="0"
+  					src="https://observablehq.com/embed/@18153f5de96e4d04/analise-e-visualizacoes-sobre-os-dados-academicos-do-ifce?cells=heatmapAlunosEvadidos%2Cviewof+frm_filtro2"></iframe>
+				</div>
+				<p class="custom-big-title">Principais Tendências de Evasão por Modalidade de Ensino e Sexo</p>
+
+					<div class="alert-info-text">
+					<p>
+					Nota-se que o curso de técnico subsequente é o que apresenta maior tendência de evasão.
+					<p>
+					
+					</div>
+					<div class="alert alert-white my-3">
+
+					<iframe width="100%" height="436" frameborder="0"
+  					src="https://observablehq.com/embed/@18153f5de96e4d04/analise-e-visualizacoes-sobre-os-dados-academicos-do-ifce?cells=barAlunosModalidadeSexo"></iframe>
+					
+				</div>
+				<p class="custom-big-title">Quantidade de Alunos por Curso</p>
+
+					<div class="alert-info-text">
+					<p>
+					Cclassificação dos cursos mais populosos, conforme classificação pela modalidade de curso. 
+					<p>
+					
+					</div>
+					<div class="alert alert-white my-3">
+
+					<iframe width="100%" height="1014" frameborder="0"
+  					src="https://observablehq.com/embed/@18153f5de96e4d04/analise-e-visualizacoes-sobre-os-dados-academicos-do-ifce?cells=key%2Cchart_cursos"></iframe>
+					
+				</div>
+					<p class="custom-big-title">Quantitativo de Alunos por Curso</p>
+
+					<div class="alert-info-text">
+					<p>
+					Apresenta-se a quantidade de alunos matriculados nos cursos no IFCE.
+					<p>
+					
+					</div>
+					<div class="alert alert-white my-3">
+
+					<iframe width="100%" height="788" frameborder="0"
+  					src="https://observablehq.com/embed/@18153f5de96e4d04/analise-e-visualizacoes-sobre-os-dados-academicos-do-ifce?cells=bar_top_5_campus"></iframe>
+					
+				</div>
+				
+			</div>
+		</div>
+
+		<div id="modal-load" style="display: none;">
+			<div id="modal-box">
+				<img src="static/img/running_loader.gif">
+			</div>
+		</div>
+	</main>
+
+</body>
+
+<script type="text/javascript">
+	
+</script>
+
+</html>
